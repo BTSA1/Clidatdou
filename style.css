@@ -1,0 +1,595 @@
+body{
+	background-color: #EEEEEE;
+    margin-left: 30px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+header h1{
+	background-color: white;
+	width: 900px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 6px solid silver;
+	border-radius: 12px;
+	box-shadow: 0 0 20px black;
+	text-align: center;
+	color: silver; 
+	font-size:26px;
+}
+
+.navigation{
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+}
+
+.navigation .menu{
+	padding: 0px;
+}
+
+.navigation li{
+	display: inline-block;
+}
+
+.navigation li a{
+	display: inline-block;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+.sousMenu{
+	display:none;
+	padding: 0px;
+	position:absolute;
+}
+
+.sousMenu li{
+	display:block;
+}
+.navigation li:hover .sousMenu{
+	display:block;
+}
+
+#left{
+	background: -webkit-linear-gradient(left, #A5A5A5, #CFCFCF);
+	background:    -moz-linear-gradient(left, #A5A5A5, #CFCFCF);
+	background:     -ms-linear-gradient(left, #A5A5A5, #CFCFCF);
+	background:      -o-linear-gradient(left, #A5A5A5, #CFCFCF);
+	background:         linear-gradient(left, #A5A5A5, #CFCFCF);
+    transition-duration: 1s;
+	width: 180px;
+	height: calc( 100% - 40px );
+	position: fixed;
+	left: -200px;
+	top: 0;
+	z-index: 2;
+	padding: 20px;
+    box-shadow: 0 0 10px black;
+	text-align: center;
+	color: white;
+	}
+
+#left:hover{
+    overflow: auto;
+    left: 0px; 
+    box-shadow: 0 0 20px black; 
+}
+
+#left .link p{
+	background: #FFF;
+}
+
+#left p{
+	height: 40px;
+    border: 1px solid #DDDDDD;
+    line-height: 40px;
+}
+
+#left a, #left a:hover{
+	color: black;
+	text-decoration: none;
+    font-size: 12px;
+}
+
+section{
+    margin-bottom: 50px;
+    padding-top: 15px;
+}
+
+section .bloc{
+    background: white;
+    width: 660px;
+    margin: 5px auto;
+    padding: 0 20px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+#popin {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+#popin div{
+    background: white;
+    padding: 20px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+/******************************* INDEX *******************************/
+
+.comment img{
+    display: block;
+    margin: auto;
+}
+
+.comment p span{
+    display: inline-block;
+    width: 100%;
+}
+
+.comment em{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-align: right;   
+    color: silver;
+}
+
+.icone_supprimer,
+.icone_modifier{
+    display: none;
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+}
+
+.bloc:hover .icone_supprimer,
+.bloc:hover .icone_modifier{
+    display: inline-block;
+    float: right;
+    margin: -5px 0;
+    color: #FFF
+}
+
+.icone_supprimer{
+    background: #880e0e;
+}
+
+.icone_modifier{
+    background: #0f0084;
+    margin-right: 5px;
+}
+
+/******************************* CONTACT *******************************/
+
+.contact .libelle{
+    display: inline-block;
+    width: 200px;
+    height: 24px;
+}
+
+.contact a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact a:hover{
+    color: #3F8BAC;
+}
+
+/******************************* OPTION *******************************/
+
+.option form{
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+
+.option h2{
+    background: silver;
+    height: 40px;
+    margin: 0 -20px 10px -20px;
+    padding: 0 50px;
+    border-radius: 5px 5px 0 0;
+    line-height: 40px;
+    color: white;
+}
+
+.option .bbcode{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0px;
+}
+
+.option textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 400px;
+    margin-bottom: 10px;
+}
+
+.option textarea span{
+    display: inline-block;
+    width: 100%;
+}
+
+.option label{
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.option input[type="text"], .option input[type="url"]{
+    width: 350px;
+    height: 22px;
+    text-indent: 5px;
+}
+
+#bbcode {
+    padding: 5px 30px;
+}
+
+#bbcode select{
+    width: 60px;
+    height: 30px;
+}
+
+.BtnValider{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+/******************************* COMPTE *******************************/
+
+.compte form{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+
+.compte label, #mdp label{
+    display: inline-block;
+    width: 250px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.compte .champ, #mdp .champ{
+    width: 200px;
+    height: 22px;
+    text-indent: 5px;
+}
+
+#mdp{
+    width: 500px;
+    heigt: 300px;
+    margin: calc(30% - 150px) auto;
+}
+
+/******************************* VOCABULAIRE *******************************/
+
+#vocabulaire{
+	margin: 20px auto;
+	}
+
+#vocabulaire .champ, 
+#vocabulaire .reponse, 
+#vocabulaire .reponseTH{
+	width: 200px;
+	height: 25px;
+	padding: 5px;
+    border: 1px solid #DDDDDD;
+	}
+	
+#vocabulaire .reponse{
+	display: none;
+	color: green;
+	}
+	
+#vocabulaire .reponseTH{
+	display: none;
+	}
+	
+#vocabulaire input{
+	width: 200px;
+	height: 25px;
+	}
+
+/******************************* LOGIN *******************************/
+
+#login{
+	width: 300px;
+    position: absolute;
+    top: 100px;
+    left: calc( 50% - 160px);
+	padding: 20px 10px 0 10px;
+	border: 1px black solid;
+	box-shadow: 0 0 20px black;
+	}
+
+#login input[type="text"], 
+#login input[type="password"]{
+	width: 200px;
+    height: 22px;
+	margin-left: 50px;
+    text-indent: 5px;
+	}
+
+#login input[type="checkbox"]{
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	margin-left: 100px;
+	cursor: pointer;
+	}
+
+#login label{
+	position: relative;
+	bottom: 4px;
+	}
+
+#login #valider{
+    width: 200px;
+    height: 30px;
+    margin: 10px 50px;
+	}
+
+#erreur {
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: calc( 50% - 200px);
+    border: 1px solid black;
+    box-shadow: 0 0 15px black;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+}
+
+/******************************* COULEUR *******************************/
+.blue{
+	background-color: #27A9E3;
+    color: #FFF;
+}
+
+.blue:hover, .blueLogin{
+	background-color: #3F8BAC;
+}
+
+.green{
+	background-color: #28B779;
+    color: #FFF;
+}
+
+.green:hover{
+	background-color: #0C9553;
+}
+
+.purple{
+	background-color: #852B99;
+    color: #FFF;
+}
+
+.purple:hover{
+	background-color: #5F1074;
+}
+
+.yellow{
+	background-color: #FFB848;
+    color: #FFF;
+}
+
+.yellow:hover{
+	background-color: #DA9627;
+}
+
+.red{
+	background-color: #e82e32;
+    color: #FFF;
+}
+
+.red:hover, #erreur{
+	background-color: #d8060a;
+}
+
+/* dégradé */
+
+.blueGradation{
+	background: -webkit-linear-gradient(bottom, #27A9E3, #FFF);
+	background:    -moz-linear-gradient(bottom, #27A9E3, #FFF);
+	background:     -ms-linear-gradient(bottom, #27A9E3, #FFF);
+	background:      -o-linear-gradient(bottom, #27A9E3, #FFF);
+	background:         linear-gradient(bottom, #27A9E3, #FFF);
+    color: #FFF;
+}
+
+.blueGradation:hover{
+	background: -webkit-linear-gradient(bottom, #3F8BAC, #FFF);
+	background:    -moz-linear-gradient(bottom, #3F8BAC, #FFF);
+	background:     -ms-linear-gradient(bottom, #3F8BAC, #FFF);
+	background:      -o-linear-gradient(bottom, #3F8BAC, #FFF);
+	background:         linear-gradient(bottom, #3F8BAC, #FFF);
+}
+
+.greenGradation{
+	background: -webkit-linear-gradient(bottom, #28B779, #FFF);
+	background:    -moz-linear-gradient(bottom, #28B779, #FFF);
+	background:     -ms-linear-gradient(bottom, #28B779, #FFF);
+	background:      -o-linear-gradient(bottom, #28B779, #FFF);
+	background:         linear-gradient(bottom, #28B779, #FFF);
+    color: #FFF;
+}
+
+.greenGradation:hover{
+	background: -webkit-linear-gradient(bottom, #0C9553, #FFF);
+	background:    -moz-linear-gradient(bottom, #0C9553, #FFF);
+	background:     -ms-linear-gradient(bottom, #0C9553, #FFF);
+	background:      -o-linear-gradient(bottom, #0C9553, #FFF);
+	background:         linear-gradient(bottom, #0C9553, #FFF);
+}
+
+.purpleGradation{
+	background: -webkit-linear-gradient(bottom, #852B99, #FFF);
+	background:    -moz-linear-gradient(bottom, #852B99, #FFF);
+	background:     -ms-linear-gradient(bottom, #852B99, #FFF);
+	background:      -o-linear-gradient(bottom, #852B99, #FFF);
+	background:         linear-gradient(bottom, #852B99, #FFF);
+    color: #FFF;
+}
+
+.purpleGradation:hover{
+	background: -webkit-linear-gradient(bottom, #5F1074, #FFF);
+	background:    -moz-linear-gradient(bottom, #5F1074, #FFF);
+	background:     -ms-linear-gradient(bottom, #5F1074, #FFF);
+	background:      -o-linear-gradient(bottom, #5F1074, #FFF);
+	background:         linear-gradient(bottom, #5F1074, #FFF);
+}
+
+.yellowGradation{
+	background: -webkit-linear-gradient(bottom, #FFB848, #FFF);
+	background:    -moz-linear-gradient(bottom, #FFB848, #FFF);
+	background:     -ms-linear-gradient(bottom, #FFB848, #FFF);
+	background:      -o-linear-gradient(bottom, #FFB848, #FFF);
+	background:         linear-gradient(bottom, #FFB848, #FFF);
+    color: #FFF;
+}
+
+.yellowGradation:hover{
+	background: -webkit-linear-gradient(bottom, #DA9627, #FFF);
+	background:    -moz-linear-gradient(bottom, #DA9627, #FFF);
+	background:     -ms-linear-gradient(bottom, #DA9627, #FFF);
+	background:      -o-linear-gradient(bottom, #DA9627, #FFF);
+	background:         linear-gradient(bottom, #DA9627, #FFF);
+}
+
+.redGradation{
+	background: -webkit-linear-gradient(bottom, #e82e32, #FFF);
+	background:    -moz-linear-gradient(bottom, #e82e32, #FFF);
+	background:     -ms-linear-gradient(bottom, #e82e32, #FFF);
+	background:      -o-linear-gradient(bottom, #e82e32, #FFF);
+	background:         linear-gradient(bottom, #e82e32, #FFF);
+    color: #FFF;
+}
+
+.redGradation:hover{
+	background: -webkit-linear-gradient(bottom, #d8060a, #FFF);
+	background:    -moz-linear-gradient(bottom, #d8060a, #FFF);
+	background:     -ms-linear-gradient(bottom, #d8060a, #FFF);
+	background:      -o-linear-gradient(bottom, #d8060a, #FFF);
+	background:         linear-gradient(bottom, #d8060a, #FFF);
+}
+
+/******************************* RESPONSIVE *******************************/
+
+@media (max-width: 1020px){
+    header h1{
+        width: calc(100% - 100px);
+    }
+}
+@media (max-width: 990px){
+    .navigation li a{
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 790px){
+    .navigation li a{
+        width: 120px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 750px){
+    section div{
+        width: calc(100% - 50px);
+        font-size: 15px;
+    }
+    .comment i{
+        font-size: 12px;
+    }
+}
+@media (max-width: 690px){
+    header h1{
+        font-size: 22px;
+    }
+    
+    .navigation li{
+        display: block;
+        width: calc(100% - 100px);
+        margin: 5px 50px;
+    }
+    
+    .navigation li a{
+        width: calc(100% - 100px);
+        padding: 0 50px;
+        text-align: left;
+    }
+}
+@media (max-width: 400px){
+    header h1{
+        font-size: 18px;
+    }
+}
+@media (max-width: 355px){
+    header h1{
+        width: calc(100% - 60px);
+        padding: 15px;
+        border: 5px solid silver;
+        box-shadow: 0 0 15px black;
+        font-size: 15px;
+    }
+    
+    .navigation li a{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        font-size: 12px;
+    }
+    section div{
+        width: calc(100% - 50px);
+        font-size: 12px;
+    }
+    .comment i{
+        font-size: 10px;
+    }
+}
+@media (max-width: 310px){
+    header h1{
+        width: calc(100% - 40px);
+        padding: 10px;
+        border: 3px solid silver;
+        box-shadow: 0 0 10px black;
+    }
+    .navigation li a{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        font-size: 12px;
+    }
+}
+
+
+.etat {
+    font-size: 12px;
+    font-weight: normal;
+    float: right;
+}
+
+
