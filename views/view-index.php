@@ -26,6 +26,7 @@
                 </div>
 <?php       } ?>
         </section>
+<?php   include 'include/footer.php'; ?>
         <script src="js/CommentLink.js"></script>
     </body>
 </html>

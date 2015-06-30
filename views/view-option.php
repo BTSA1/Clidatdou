@@ -28,6 +28,8 @@
 		<footer>
 			<p>Site de la classe de BTS SIO de l'Institut d'Informatique Appliqué</p>
 		</footer>
+<?php   include 'include/footer.php'; ?>
+    
 		<script src="js/jquery.js"></script>
         <script src="js/saveConnexion.js"></script>
 	</body>

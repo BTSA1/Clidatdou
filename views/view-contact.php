@@ -77,6 +77,8 @@
                 </div>
 <?php       } ?>
         </section>
+<?php   include 'include/footer.php'; ?>
+    
 		<script src="js/jquery.js"></script>
         <script src="js/saveConnexion.js"></script>
     </body>

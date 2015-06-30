@@ -54,6 +54,8 @@
                 <button class="BtnValider" id="valider" style="margin-bottom: 20px">Voir la correction</button>
 		    </div>
 		</section>
+<?php   include 'include/footer.php'; ?>
+    
 		<script src="js/jquery.js"></script>
 		<script>
 			var reponse = false;

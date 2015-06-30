@@ -60,6 +60,8 @@
                 <em>par: <?php echo $prenom; ?></em>
             </div>
 		</section>
+<?php   include 'include/footer.php'; ?>
+    
 		<script src="js/jquery.js"></script>
         <script src="js/saveConnexion.js"></script>
 		<script src="js/BBCode.js"></script>

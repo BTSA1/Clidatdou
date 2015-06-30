@@ -12,8 +12,8 @@ header h1{
 	border: 6px solid silver;
 	border-radius: 12px;
 	box-shadow: 0 0 20px black;
-	text-align: center;
 	color: silver; 
+    text-align: center;
 	font-size:26px;
 }
 
@@ -125,6 +125,14 @@ section .bloc{
     padding: 20px;
     border: 1px solid #DDDDDD;
     border-radius: 5px;
+}
+
+footer{
+    position: fixed;
+    left: 40px;
+    bottom: 10px;
+    font-size: 10px;
+    color: #555;
 }
 
 /******************************* INDEX *******************************/
@@ -313,10 +321,15 @@ section .bloc{
 
 /******************************* LOGIN *******************************/
 
+#loginPage h1{
+    text-align: center;
+    color: #FFF; 
+}
+
 #login{
 	width: 300px;
     position: absolute;
-    top: 100px;
+    top: 150px;
     left: calc( 50% - 160px);
 	padding: 20px 10px 0 10px;
 	border: 1px black solid;
@@ -354,7 +367,7 @@ section .bloc{
     width: 400px;
     height: 40px;
     position: absolute;
-    top: 30px;
+    top: 80px;
     left: calc( 50% - 200px);
     border: 1px solid black;
     box-shadow: 0 0 15px black;

@@ -90,6 +90,8 @@
                 <input type="button" id="validerMdp" value="Valider">
             </div>
         </div>
+<?php   include 'include/footer.php'; ?>
+    
 		<script src="js/jquery.js"></script>
         <script src="js/saveConnexion.js"></script>
 		<script src="js/compte.js"></script>
