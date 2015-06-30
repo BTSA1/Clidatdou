@@ -3,7 +3,7 @@
 
     $req = $bdd->prepare('UPDATE membre SET derniereConnexion = :date WHERE prenom = :prenom');
     $req->execute(array(
-        'date' => date('Y-m-d G:i:s'),
+        'date' => date('Y-m-d H:i:s'),
         'prenom' => $prenom
     ));
 ?>

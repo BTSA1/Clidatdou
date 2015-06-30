@@ -25,7 +25,7 @@
                     $minutes += $ecart->i;
                     if($minutes > 3)
                     {
-                        $etat = 'Dernière connexion le ' . $last->format('d/m/Y');
+                        $etat = 'Dernière connexion le ' . $last->format('d/m/Y') . ' à ' . $last->format('H:i');
                         $color = 'red';
                     }
                     else
