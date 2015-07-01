@@ -9,8 +9,8 @@
     </head>
 
     <body>
-<?php   require 'include/top.php';
-        require 'include/left.php'; ?>
+<?php   require 'include/left.php'; 
+        require 'include/top.php'; ?>
         <section>
 <?php       $requete = $bdd->prepare('SELECT message.id id, contenu FROM message, membre WHERE membre.prenom = :prenom AND membre.id = message.auteur ORDER BY message.id DESC');
             $requete->execute(array('prenom' => $prenom));

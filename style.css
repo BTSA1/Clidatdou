@@ -47,35 +47,78 @@ header h1{
 }
 
 .sousMenu li{
-	display:block;
+	display: block;
 }
 .navigation li:hover .sousMenu{
-	display:block;
+	display: block;
 }
 
-#left{
+#leftBlocForButton{
+    background: -webkit-linear-gradient(left, #A5A5A5, #CFCFCF);
+	background:    -moz-linear-gradient(left, #A5A5A5, #CFCFCF);
+	background:     -ms-linear-gradient(left, #A5A5A5, #CFCFCF);
+	background:      -o-linear-gradient(left, #A5A5A5, #CFCFCF);
+	background:         linear-gradient(left, #A5A5A5, #CFCFCF);
+    height: 50px;
+	position: fixed;
+	left: -200px;
+	top: 0;
+	padding: 0 20px 0 20px;
+	z-index: 3;
+}
+
+#leftBloc{
 	background: -webkit-linear-gradient(left, #A5A5A5, #CFCFCF);
 	background:    -moz-linear-gradient(left, #A5A5A5, #CFCFCF);
 	background:     -ms-linear-gradient(left, #A5A5A5, #CFCFCF);
 	background:      -o-linear-gradient(left, #A5A5A5, #CFCFCF);
 	background:         linear-gradient(left, #A5A5A5, #CFCFCF);
-    transition-duration: 1s;
+	padding: 20px;
 	width: 180px;
-	height: calc( 100% - 40px );
+    height: calc(100% - 90px);
 	position: fixed;
 	left: -200px;
-	top: 0;
-	z-index: 2;
-	padding: 20px;
+	top: 50px;
+	z-index: 1;
     box-shadow: 0 0 10px black;
+}
+
+#left{
+	position: absolute;
+    top: 0;
+	padding: 10px 20px 20px 20px;
+	z-index: 4;
 	text-align: center;
 	color: white;
-	}
+}
 
-#left:hover{
-    overflow: auto;
-    left: 0px; 
-    box-shadow: 0 0 20px black; 
+.leftDiv{
+	width: 180px;
+	left: -200px;
+    transition-duration: 1s;
+}
+
+#activeLeft {
+	background: -webkit-linear-gradient(left, #CFCFCF, #D9D9D9);
+	background:    -moz-linear-gradient(left, #CFCFCF, #D9D9D9);
+	background:     -ms-linear-gradient(left, #CFCFCF, #D9D9D9);
+	background:      -o-linear-gradient(left, #CFCFCF, #D9D9D9);
+	background:         linear-gradient(left, #CFCFCF, #D9D9D9);
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    transition-duration: 1s;
+    text-align: center;
+    z-index: 2;
+    border: none;
+    box-shadow: 0 0 10px black;
+    border-radius: 0 5px 5px 0;
+}
+
+#activeLeft:focus {
+  outline: none;
 }
 
 #left .link p{
@@ -108,6 +151,7 @@ section .bloc{
     border-radius: 5px;
 }
 
+
 #popin {
     display: none;
     background: rgba(0,0,0,0.5);
@@ -133,6 +177,7 @@ footer{
     bottom: 10px;
     font-size: 10px;
     color: #555;
+    transition-duration: 1s;     
 }
 
 /******************************* INDEX *******************************/
@@ -604,5 +649,3 @@ footer{
     font-weight: normal;
     float: right;
 }
-
-

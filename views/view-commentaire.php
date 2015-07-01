@@ -9,8 +9,8 @@
 	</head>
 	
 	<body>
-		<?php require 'include/top.php'; 
-        require 'include/left.php'; ?>
+<?php   require 'include/left.php'; 
+        require 'include/top.php'; ?>
 		
 		<section>
 			<div class="bloc option">

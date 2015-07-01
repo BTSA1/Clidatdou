@@ -9,8 +9,8 @@
     </head>
 
     <body>
-<?php   require 'include/top.php';
-        require 'include/left.php'; ?>
+<?php   require 'include/left.php'; 
+        require 'include/top.php'; ?>
         <section>
 <?php       $requete = $bdd->prepare('SELECT lien.id id, url, titre FROM lien, membre WHERE membre.prenom = :prenom AND membre.id = lien.auteur ORDER BY lien.id DESC');
             $requete->execute(array('prenom' => $prenom));

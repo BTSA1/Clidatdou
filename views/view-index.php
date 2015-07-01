@@ -5,14 +5,13 @@
         <link type="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
         <link type="text/css" rel="stylesheet" href="style.css"/>
 		<link rel="icon" href="img/logo.png" />
-        <script src="js/jquery.js"></script>
         <title>Accueil</title>
     </head>
 
     <body>
-<?php   require 'include/top.php';
-        require 'include/left.php'; ?>
-        <section>
+<?php   require 'include/left.php'; 
+        require 'include/top.php'; ?>
+            <section>
 <?php       $requete = $bdd->query('SELECT message.id id, contenu, prenom FROM message, membre WHERE membre.id = message.auteur ORDER BY message.id DESC');
             while($liste_message = $requete->fetch())
             { ?>
@@ -27,6 +26,9 @@
 <?php       } ?>
         </section>
 <?php   include 'include/footer.php'; ?>
+       
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/CommentLink.js"></script>
     </body>
 </html>

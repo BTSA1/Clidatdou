@@ -34,15 +34,13 @@
     </head>
 
     <body>
-<?php   require 'include/top.php';
-        require 'include/left.php';
+<?php   require 'include/left.php'; 
+        require 'include/top.php'; 
         $req = $bdd->prepare('SELECT * FROM membre WHERE id= :id');
-    $req->execute(array(
-        'id' => $idPrenom
-    ));
-    $info_membre = $req->fetch();
-        
-        ?>
+        $req->execute(array(
+            'id' => $idPrenom
+        ));
+        $info_membre = $req->fetch(); ?>
         <section>
             <div class="bloc compte">
                 <form action="" method="POST">

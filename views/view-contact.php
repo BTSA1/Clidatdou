@@ -9,8 +9,8 @@
     </head>
 
     <body>
-<?php   require 'include/top.php';
-        require 'include/left.php'; ?>
+<?php   require 'include/left.php'; 
+        require 'include/top.php'; ?>
         <section>
 <?php       $requete = $bdd->query('SELECT * FROM membre WHERE 1 ORDER BY prenom');
             while($liste_membre = $requete->fetch())
